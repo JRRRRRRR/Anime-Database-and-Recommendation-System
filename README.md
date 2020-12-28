@@ -1,2 +1,2 @@
-# Anime-Recommendation-System
+# Anime-Database-and-Recommendation-System
 Capstone
