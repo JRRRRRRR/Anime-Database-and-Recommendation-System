@@ -31,7 +31,7 @@ Capstone
 * Notebook link: https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/final.ipynb
 * Data collecting, Data Scraping, Data cleaning, Exploratory data analysis, recommenation system and Visualization
 * Python, Jupyter Notebook, HTML
-* A recording demo: 
+* A recording demo: https://www.youtube.com/watch?v=sq_1U4kXd8k&feature=youtu.be
 
 # Conclusion
 * Built a reconmendation model in CoClustering algorithm with 2.854187 RMSE and 2.040356 MAE
