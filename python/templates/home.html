@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anime Database</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+{% if not myresult %}
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Thanks for using Anime Database System</h2>      
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9cfb59c6-17ec-41a0-9918-86b38d4ec837/ddrca2z-fdd97f9f-1eda-420e-8a76-6e6e3a4c7872.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOWNmYjU5YzYtMTdlYy00MWEwLTk5MTgtODZiMzhkNGVjODM3XC9kZHJjYTJ6LWZkZDk3ZjlmLTFlZGEtNDIwZS04YTc2LTZlNmUzYTRjNzg3Mi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.n2kHTbknPr5pHLsCeC4XZqXmDvDFQhVNvKDVF7uDqJI" class="img-responsive" style="width:100%" alt="Image">
+
+  </div>
+</div>
+
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Select One of the Features That You Want to Access:</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="/search">Search</a>
+    </div>
+    <div class="col-sm-3"> 
+	  <a href="/sort">Sort</a>
+    </div>
+    <div class="col-sm-3"> 
+      <a href="/analyze">Analyze</a>
+    </div>
+    <div class="col-sm-3">
+      <a href="/recommendation">Recommendation</a>
+    </div>
+
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+   
+
+     </div><br>
+
+
+      <p>Coming soon..</p>
+    </div>
+  </div>
+</div><br><br>
+
+{% endif %}
+
+{% if myresult %}
+
+<div class="container" style="padding-top: 10%; padding-bottom: 10%">
+	<h1>Results: </h1>
+	{% for row in myresult %}
+		{% for i in range(row|length) %}
+		<div class="row">
+			<div class="col-sm-3">
+				
+			</div>
+			<div class="col-sm-3" style="border: black solid 1px">
+				{{ titles[i] }}
+			</div>
+			<div class="col-sm-3" style="border: black solid 1px">
+				{{ row[i] }}
+			</div>
+			<div class="col-sm-3">
+				
+			</div>
+		</div>
+		
+		{% endfor %}
+		<hr>
+
+	{% endfor %}
+	
+	{% endif %}
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p>Flatiron School Capstone</p>
+</footer>
+
+
+</body>
+</html>
+
+</body>
+</html>

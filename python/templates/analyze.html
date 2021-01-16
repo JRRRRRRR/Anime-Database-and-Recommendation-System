@@ -1,0 +1,73 @@
+<form method="POST" action="">
+			{{ form.hidden_tag()}}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">Search Table </legend>
+				<div class="form-group">
+					{{ form.animeID.label(class="form-control-label")}}
+					{{ form.animeID(class="form-control form-control-lg")}}
+				</div>
+				<div class="form-group">
+					{{ form.analyze.label(class="form-control-label")}}
+					{{ form.analyze(class="form-control form-control-lg")}}
+				</div>
+				<div class="form-group">
+					{{ form.search(class="btn btn-outline-info") }}
+				</div>
+			</fieldset>
+		</form>
+
+<h2>Search Result:</h2>
+<table>
+    <tr>
+        {% for col in column_names %}
+        {% if col == link_column %}
+        <th>poster</th>
+        {% else %}
+        <th>{{col}}</th>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {% for row in row_data %}
+    <tr>
+        {% for col, row_ in zip(column_names, row) %}
+        {% if col == link_column %}
+        <td><img src={{row_}}  alt="Image"></td>
+
+        {% else %}
+        <td>{{row_}}</td>
+        {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+
+<h2>Analyze:</h2>
+
+{% for i in cat %}
+{% if catField[0] == i %}
+
+
+<img src="{{ url_for('static', filename=catField[1]) }}" align="middle" /><br>
+Note: The total percentage sometimes is less than 100% because of the N/A data.
+
+{% endif %}
+{% endfor %}
+
+{% for i in continuous %}
+{% if contField[0] == i %}
+
+
+<img src="{{ url_for('static', filename=contField[1]) }}" align="middle" /><br>
+<img src="{{ url_for('static', filename=contField[2]) }}" align="middle" /><br>
+Note: No red line maker means there is no data in this field
+
+{% endif %}
+{% endfor %}
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Evaluation</title>
+    </head>
+<form method="POST" action="">   
+    <h2>Welcome to use anime recommendation system<h2>
+    <h3>Please rating the following animes: <h3>
+    <h4>Note: Refresh the page can change the animes set</h4>
+    <table>
+    <tr>
+        {% for col in column_names %}
+        <th>{{col}}</th>
+        {% endfor %}
+    </tr>
+
+    {% for row, rating in zip(row_data, ratings_form)%}
+
+    <tr>
+        {% for col, row_ in zip(column_names,row) %}
+        {% if col == link_column %}
+        <td>{{ row_ }}</td>
+        
+
+        {% elif col == image_column %}
+        <td>How do you rate this anime on a scale of 10, press 0 if you have not seen :
+        <div class="form-group">
+					{{ rating.label(class="form-control-label")}}
+					{{ rating(class="form-control form-control-lg")}}
+				</div><br/>
+
+        <img src={{row_}}  alt="Image"><br/>
+        </td>
+        {% else %}
+        <td>{{row_}}</td>
+          
+        
+        {% endif %}
+        {% endfor %}
+    </tr>
+
+    
+    {% endfor %}
+    </table>
+    <div class="form-group">
+                    {{ form.submit(class="btn btn-outline-info") }}
+                </div>
+</form>
+</html>
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Evaluation</title>
+    </head>
+    <h2>Welcome to use anime recommendation system<h2>
+    <h3>Here are some recommendation animes for you:<h3>
+    <table>
+    <tr>
+        {% for col in column_names %}
+        <th>{{col}}</th>
+        {% endfor %}
+    </tr>
+
+    <tr>
+    {% for id_, title, image in zip(id_list, title_list, image_list)%}
+
+    
+
+        <td>{{ id_ }}</td>
+        <td>{{ title }}</td>
+        <td><img src={{image}}  alt="Image"></td>
+
+
+    </tr>
+
+    
+    {% endfor %}
+    </table>
+
+</html>
