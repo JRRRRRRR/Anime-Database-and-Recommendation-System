@@ -33,6 +33,13 @@ Capstone
 * Python, Jupyter Notebook, HTML
 * A recording demo: https://www.youtube.com/watch?v=sq_1U4kXd8k&feature=youtu.be
 
+# App Instruction
+Welcome to try this app yourself. Here are some instructions and tips.
+* Download clean datasets from data link in data file, and all python folder
+* Place the dataset in a suitable location and edit the paths on app.py file
+* Launch the app.py using terminal or other software
+* Copy the website link(mostly is http://127.0.0.1:5000/) showing on the output and paste it on your browser
+
 # Conclusion
 * Built a reconmendation model in CoClustering algorithm with 2.854187 RMSE and 2.040356 MAE
 
