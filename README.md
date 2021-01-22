@@ -5,7 +5,7 @@ Capstone
    * Created my own dataset by combining the scraped data (14,000 rows) from https://www.anime-planet.com/ and data from kaggle.com including over 4 thousand lines of animes information and over 3 million rating data(over 70 thousand users and over 4 thousand animes)
    * Built my own database system and recommendation system
    * Conducted an interface using HTML and WT Form and connected it with the database using Python Flask in Sublime Text
-   * Gave users some recommendation animes and some overwiew analysis
+   * Gave users some recommendation animes and some overview analysis
 * Features:
 1. Accurate Search
     * Search an anime information by anime id  
