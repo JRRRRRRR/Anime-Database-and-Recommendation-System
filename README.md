@@ -49,10 +49,11 @@ Welcome to try this app yourself. Here are some instructions and tips.
   * If you have no ideas which anime to watch, you can try Sort or recommendation features.
     * Sort feature can filtrate you prefer scope or just sorting the animes by want watch variables and recommendation features will give you some recommendation animes basing on your rating of the survy animes.
   * If you have some ideas about what you want to watch, you can use search feature. 
-  Search animes by key words to see any other related animes
+    * Search animes by key words to see any other related animes
 
 * For analysts: 
-  To pass graphs and charts to the front desk, I found two methods. One is saving them on the local machine and supply the path to the front desk. The other one is encode them into base64.
+  * To pass graphs and charts to the front desk, I found two methods. One is saving them on the local machine and supply the path to the front desk. The other one is encode them into base64.
+  * It is a pretty real case in our daily life. The training time is much longer than we excepted because of the huge dataset. I suggest than we can slightly dope down our training size base on the dataset size.
 
 # Future Work
 * Algorithm: Try more algorithms from other packages
