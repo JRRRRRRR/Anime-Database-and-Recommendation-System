@@ -41,18 +41,18 @@ Welcome to try this app yourself. Here are some instructions and tips.
 * Copy the website link(mostly is http://127.0.0.1:5000/) showing on the output and paste it on your browser
 
 # Conclusion
-* Built a reconmendation model in CoClustering algorithm with 2.854187 RMSE and 2.040356 MAE
+* In the database system, I totally got three dataset. However, two of them are having a lot of repeated features. At last, I use the dataset from https://www.anime-planet.com/ as the basic one and added more features from the other dataset. Also, I scraped more features in this website and added into it.
+* In the recommendation system, I had tried some algorithms(including KNNBasic(), KNNBaseline(), KNNWithMeans(), SVD(), SVDpp(), NMF(), SlopeOne(), CoClustering()) in this recommendation system. At last, CoClustering algorithm gave me a best outcome with RMSE 2.854178 and MAE 2.040356
 
 # Recommendation
 * For users: 
-  If you have no ideas which anime to watch, you can try Sort or recommendation features.
+  * If you have no ideas which anime to watch, you can try Sort or recommendation features.
   Sort feature can filtrate you prefer scope or just sorting the animes by want watch variables and recommendation features will give you some recommendation animes basing on your rating of the survy animes.
-  If you have some ideas about what you want to watch, you can use search feature. 
+  * If you have some ideas about what you want to watch, you can use search feature. 
   Search animes by key words to see any other related animes
 
 * For analysts: 
-  I found that the algorithm running on the Sublime Text is faster than those on Jupyter Notebook
-  Flask is a handy tool to connect python and html, but dataframes, charts can not show on the html directly.
+  To pass graphs and charts to the front desk, I found two methods. One is saving them on the local machine and supply the path to the front desk. The other one is encode them into base64.
 
 # Future Work
 * Algorithm: Try more algorithms from other packages
