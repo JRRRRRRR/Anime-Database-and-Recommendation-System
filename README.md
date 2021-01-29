@@ -36,13 +36,12 @@ Capstone
 # App Instruction
 Welcome to try this app yourself. Here are some instructions and tips.
 * Download clean datasets from data link in data file, and all python folder
-* Place the dataset in a suitable location and edit the paths on app.py file
 * Launch the app.py using terminal or other software
 * Copy the website link(mostly is http://127.0.0.1:5000/) showing on the output and paste it on your browser
 
 # Conclusion
 * In the database system, I totally got three dataset. However, two of them are having a lot of repeated features. At last, I use the dataset from https://www.anime-planet.com/ as the basic one and added more features from the other dataset. Also, I scraped more features in this website and added into it.
-* In the recommendation system, I had tried some algorithms(including KNNBasic(), KNNBaseline(), KNNWithMeans(), SVD(), SVDpp(), NMF(), SlopeOne(), CoClustering()) in this recommendation system. At last, CoClustering algorithm gave me a best outcome with RMSE 2.854178 and MAE 2.040356 in a rating scale of 10.
+* In the recommendation system, I had tried some algorithms(including KNNBasic(), KNNBaseline(), KNNWithMeans(), SVD(), SVDpp(), NMF(), SlopeOne(), CoClustering()) in this recommendation system. At last, CoClustering algorithm gave me a best outcome with RMSE 2.8484734984857 and MAE 2.04126179225725 in a rating scale of 10. What's more, this algorithm gave me the shortest training time which is around 42 seconds.
 
 # Recommendation
 * For users: 
