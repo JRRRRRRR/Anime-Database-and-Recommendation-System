@@ -56,6 +56,7 @@ Welcome to try this app yourself. Here are some instructions and tips.
 # Conclusion
 * In the database system, I totally got three dataset. However, two of them are having a lot of repeated features. At last, I use the dataset from https://www.anime-planet.com/ as the basic one and added more features from the other dataset. Also, I scraped more features in this website and added into it.
 * In the recommendation system, I had tried some algorithms(including KNNBasic(), KNNBaseline(), KNNWithMeans(), SVD(), SVDpp(), NMF(), SlopeOne(), CoClustering()) in this recommendation system. At last, CoClustering algorithm gave me a best outcome with RMSE 2.8484734984857 and MAE 2.04126179225725 in a rating scale of 10. What's more, this algorithm gave me the shortest training time which is around 42 seconds.
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/algorithm.png)
 
 # Recommendation
 * For users: 
