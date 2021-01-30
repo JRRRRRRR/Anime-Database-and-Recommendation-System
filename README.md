@@ -20,10 +20,13 @@ Capstone
     * Sorted by numerical variables such as start year, rating and so on
     * Ordered by (sacending or descending) following by the sorted by option
     * Resulted by all the information for all qualified animes
+
 ![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/sort1.png)
+
 3. Analyze
     * Entered the excat anime id and selected a feild (genre, type, duration and so on) for analyzing
     * Resulted by the information of this anime and a graph of this feild following
+    * Example:
 ![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/analyze1.png)
 4. Recommendation System
     * Trained severval algorithms and chose a suitable one
@@ -32,10 +35,10 @@ Capstone
     * Gave a survy to the user to rate
     * Retrained this model by adding these new rating
     * Resulted by a list of recommendation animes
-Survy:
-![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation1.png)
-Recommendation List:
-![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation2.png)
+    * Survy:<br />
+    ![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation1.png)
+    * Recommendation List:<br />
+    ![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation2.png)
 
 
 # Techniques
