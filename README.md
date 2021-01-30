@@ -6,6 +6,7 @@ Capstone
    * Built my own database system and recommendation system
    * Conducted an interface using HTML and WT Form and connected it with the database using Python Flask in Sublime Text
    * Gave users some recommendation animes and some overview analysis
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/home.png)
 * Features:
 1. Accurate Search
     * Search an anime information by anime id  
