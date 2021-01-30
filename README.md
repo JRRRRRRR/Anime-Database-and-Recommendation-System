@@ -6,20 +6,25 @@ Capstone
    * Built my own database system and recommendation system
    * Conducted an interface using HTML and WT Form and connected it with the database using Python Flask in Sublime Text
    * Gave users some recommendation animes and some overview analysis
+* Home Page
 ![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/home.png)
+
 * Features:
 1. Accurate Search
     * Search an anime information by anime id  
     * Search an anime information by any key words of its title
     * Resulted by all the information for all qualified animes
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/search.png)
 2. Scope of the search(Sort)
     * Filtrated by some categorical variables such as on going(True or False), season of realease and so on
     * Sorted by numerical variables such as start year, rating and so on
     * Ordered by (sacending or descending) following by the sorted by option
     * Resulted by all the information for all qualified animes
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/sort1.png)
 3. Analyze
     * Entered the excat anime id and selected a feild (genre, type, duration and so on) for analyzing
     * Resulted by the information of this anime and a graph of this feild following
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/analyze1.png)
 4. Recommendation System
     * Trained severval algorithms and chose a suitable one
     * Tune hyper parameter for this model
@@ -27,6 +32,11 @@ Capstone
     * Gave a survy to the user to rate
     * Retrained this model by adding these new rating
     * Resulted by a list of recommendation animes
+Survy:
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation1.png)
+Recommendation List:
+![alt text](https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/image/recommendation2.png)
+
 
 # Techniques
 * Notebook link: https://github.com/JRRRRRRR/Anime-Database-and-Recommendation-System/blob/main/final.ipynb
